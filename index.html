@@ -6,19 +6,19 @@
 <title>Memory Album</title>
 <style>
 body{
-margin:0;
 font-family:Arial,sans-serif;
 background:#111;
 color:white;
+margin:0;
 text-align:center;
 }
 .header{
 padding:20px;
-font-size:30px;
-font-weight:bold;
 background:#222;
+font-size:28px;
+font-weight:bold;
 }
-.gallery{
+.container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -27,51 +27,35 @@ padding:20px;
 .card{
 background:#1e1e1e;
 border-radius:15px;
-overflow:hidden;
+padding:20px;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-.card h3{
-margin:15px 0 5px;
 }
 .btn{
 display:inline-block;
-margin:15px;
 padding:12px 25px;
 background:#ff4d6d;
 color:white;
 text-decoration:none;
 border-radius:30px;
 font-weight:bold;
+margin-top:10px;
 }
 </style>
 </head>
 <body>
 
-<div class="header">Rahul & Priya Wedding Album</div>
+<div class="header">Memory Album</div>
 
-<div class="gallery">
+<div class="container">
 
 <div class="card">
-<img src="https://picsum.photos/400/300?1">
-<h3>Engagement</h3>
-<a class="btn" href="https://res.cloudinary.com/nocnxo18/video/upload/v1786229623/video_2026-08-09_04-22-01_nw5xlk.mp4">Play Video</a>
+<h2>Rahul Wedding Album</h2>
+<a class="btn" href="customers/rahul.html">Open Album</a>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/400/300?2">
-<h3>Haldi</h3>
-<a class="btn" href="https://res.cloudinary.com/nocnxo18/video/upload/v1786229623/video_2026-08-09_04-22-01_nw5xlk.mp4">Play Video</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?3">
-<h3>Wedding</h3>
-<a class="btn" href="https://res.cloudinary.com/nocnxo18/video/upload/v1786229623/video_2026-08-09_04-22-01_nw5xlk.mp4">Play Video</a>
+<h2>Aman Wedding Album</h2>
+<a class="btn" href="customers/aman.html">Open Album</a>
 </div>
 
 </div>
